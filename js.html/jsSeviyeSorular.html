@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 250 ye kadar olan sayıların toplamı
+           25 ile 125 arasındaki sayıların toplamı
+           1 ile 1000 arasındaki sayıların toplamının ortalaması
+           1 den 100 e kadar sayıların 5'e bölünenleri ekrana ayzdırın
+           var numbers = [33, 11, -5, 20, 1, 55, 100, 2, 94, 55, 11]
+             Dizinin en büyük sayısıı for döngüsü ile bul
+             Dizinin en küçük sayısıı for döngüsü ile bul */
+
+
+         //250 ye kadar olan sayıların toplamı  
+         var toplamSayi=0  
+         for(i=0;i<=250;i++){
+            toplamSayi +=i;
+        }   
+          console.log("250 ye kadar olan sayıların toplamı:", toplamSayi);
+          
+         //25 ile 125 arasındaki sayıların toplamı
+         var toplamSayi1=0
+         for(i=25;i<126;i++){
+           toplamSayi1+=i
+         }
+         console.log("25 ile 125 arasındaki sayıların toplamı",toplamSayi1)
+
+         //1 ile 1000 arasındaki sayıların toplamının ortalaması
+        let toplamSayi2= 0
+        for (let i = 1; i <= 1000; i++); {
+            toplamSayi2 += i; 
+        }
+        let ort=toplamSayi2/1000;
+        console.log(ort);
+
+        //1 den 100 e kadar sayıların 5'e bölünenleri ekrana ayzdırın
+        let toplam=0;
+        for(let i=1;i<=100;i++){
+            if(i%5==0){
+                console.log("1 den 100 e kadar sayıların 5'e bölünenleri ekrana ayzdırın",i)
+
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

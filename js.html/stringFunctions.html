@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var firstname = "       Elif"
+        var result1 = firstname.toLocaleUpperCase()
+        console.log(result1);
+
+        var result3 = firstname.trim()
+        console.log(result3);
+
+        var result4 = firstname.replace("i", "x")
+        console.log(result4);
+
+        num = "+902552455215 "
+        var result5 = num.replace("+90", "")
+        console.log(result5);
+
+        let company = "teach career"
+        console.log(company[1]);
+
+        console.log(company.substring(1, 5))
+
+
+        //“  Çağatay Yıldız ” isimli metindeki boşlukları kaldır.    (REPLACE)
+
+        var ad = "  Çağatay Yıldız "
+        var ad1 = ad.trim()
+        console.log(ad1);
+
+        //“cagatay yildiz” kelimesindeki boşlukları temizle ve tüm harfleri büyült ( REPLACE ve UPPER)
+        var add = "cagatay yildiz"
+        var add1 = add.replaceAll(" ", "")
+        var add2 = add1.toLocaleUpperCase()
+        console.log(add2);
+
+        //“******Çağatay Yıldız” isimli metindeki yıldızları kaldır (REPLACE)
+
+        var yildiz = "******Çağatay Yıldız"
+        var result = yildiz.replace("******", "")
+        console.log(result);
+
+        //“Çağatay  Yıldız” metnindeki kelimeler arasında 2 boşluk var bunu bir boşluk yap (REPLACE)
+
+        var isim = "Çağatay  Yıldız"
+        var isim1 = isim.replaceAll("  ", " ")
+        console.log(isim1);
+
+        //“**Tech Career**” isimli metindeki yıldızları kaldır (REPLACE)
+        var kaldir = "**Tech Career**"
+        var kaldir1 = kaldir.replaceAll("**", " ")
+        console.log(kaldir1);
+
+        //“Tech Career” isimli metnin soluna ve sağına 3 yıldız koy. “***Tech Career***” ( Normal toplama operatörü)
+        var isimm = "Tech Career"
+        var isimm1 = "***" + isimm + "***"
+        console.log(isimm1);
+
+        //“Tech Career Bilişim teknolojileri” metnindeki son kelimeyi büyült (SUBSTRING)
+        var iisim = "Tech Career Bilişim teknolojileri"
+        var iisim1 = iisim.substring(19, 33).toLocaleUpperCase()
+        var iisim2= iisim.replaceAll(" teknolojileri",iisim1)
+        console.log(iisim2);
+
+        //“Tech Career” kelimelerin ilk harflerini büyült (Substring ve upper)
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
