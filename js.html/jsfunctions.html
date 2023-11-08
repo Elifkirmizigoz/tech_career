@@ -29,6 +29,16 @@
         }
          var data3= calc(10,5)
          console.log(data3)
+
+
+         function calcNumbers(x,y,nmprint){
+            var result= x*y*Math.PI;
+            nmprint(result)
+         }
+         calcNumbers(10,20,printSample)
+         function printSample(myData){
+            console.log("callback result: ",myData)
+         }
     </script>
 </body>
 </html>

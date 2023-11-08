@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var countries = ["Türkiye", "Almanya", "İran", "Rusya", "Küba", "İngiltere"]
+        var countries2 = ["İsveç", "Finlandiya", "Norveç"]
+        // concat fonksiyonu 2 diziyi birleştirir.
+        var newcountries=countries.concat(countries2);  //YAZDIRMADI!!!!!
+        console.log(newcountries)
+        //push yeni eleman ekler.
+        var countries = ["Türkiye", "Almanya", "İran", "Rusya", "Küba", "İngiltere"]
+        countries.push("Yunanistan");
+        console.log(countries);
+
+        //diziyi ters çevirir.
+        var countries = ["Türkiye", "Almanya", "İran", "Rusya", "Küba", "İngiltere"]
+        countries.reverse()
+        console.log(countries);
+
+        // dizinin bir elemanını ekrana yazar. YAZMADI!!!
+        var countries = ["Türkiye", "Almanya", "İran", "Rusya", "Küba", "İngiltere"]
+        console.log(countries[0]);
+
+
+
+        // diziden bir eleman silmek için 
+        var countries = ["Türkiye", "Almanya", "İran", "Rusya", "Küba", "İngiltere"]
+        var indexNo = countries.indexOf("İngiltere")
+        countries.splice(indexNo, 1)
+        console.log(countries);
+
+        //includes: dizinin içinde items arama: 
+        var countries = ["Türkiye", "Almanya", "İran", "Rusya", "Küba", "İngiltere"]
+        var dataControl = countries.includes("Almanya")
+        console.log(dataControl);
+
+
+
+
+
+
+
+
+
+        /*console.log(conturies[0]);
+    
+        var indexNo= conturies.indexNo
+    
+    
+        var dataControl*/
+
+
+    </script>
+
+</body>
+
+</html>
