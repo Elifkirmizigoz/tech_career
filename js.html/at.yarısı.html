@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .total {
+
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .button {
+            width: 100px;
+            height: 70px;
+            margin-left: 40px;
+            padding: 20px;
+        }
+
+        div img {
+            height: 150px;
+            width: 150px;
+            padding: 20px;
+        }
+
+        .finish {
+            background-color: red;
+            position: absolute;
+            right: 30px;
+            color: tomato;
+            display: flex;
+            flex-direction: column;
+            width: 20px;
+            height: 800px;
+            border-style: solid;
+
+        }
+
+        .finish {}
+    </style>
+
+</head>
+
+<body>
+    <div class="total">
+        <div class="sagdakiler">
+            <button class="button" onclick="buton()">START</button>
+            <div>
+                <img class="at1" src="https://vetrehberi.com/wp-content/uploads/2021/05/arap-at-irki-ve-ozellikleri.jpg"
+                    alt="">
+            </div>
+            <div>
+                <img class="at2" src="https://ares.shiftdelete.net/2018/05/aYBjv5.jpg" alt="">
+            </div>
+            <div>
+                <img class="at3" src="https://www.manzara.gen.tr/w1/K%C4%B1r-At.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="finish"></div>
+    </div>
+
+
+</body>
+<script>
+    var e = 0
+    var l = 0
+    var i = 0
+    function buton() {
+
+        setInterval(() => {
+            var x = Math.floor(Math.random() * 100)
+            var y = Math.floor(Math.random() * 200)
+            var z = Math.floor(Math.random() * 300)
+
+            e += x
+            l += y
+            i += z
+            document.querySelector(".at1").style.marginLeft = e + "px"
+            document.querySelector(".at2").style.marginLeft = l + "px"
+            document.querySelector(".at3").style.marginLeft = i + "px"
+
+            if (e > 1315) {
+                alert("1.at kazandi");
+                e = 0
+                l = 0
+                i = 0
+            }
+
+            else if (l > 1315) {
+                alert("2. at kazandi")
+                e = 0
+                l = 0
+                i = 0;
+            }
+
+            else if (i > 1315) {
+                alert("3. at kazandi");
+                e = 0
+                l = 0
+                i = 0
+            }
+
+        }, 500);
+
+
+    }   
+</script>
+
+
+</html>

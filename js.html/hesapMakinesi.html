@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .total {
+            width: 200;
+            height: 400px;
+            border-style: solid;
+        }
+
+        .sonuc {
+            width: 40px;
+            height: 20px;
+            border-style: solid;
+        }
+
+        .kutular {}
+
+        .kutu {
+            display: flex;
+            flex-wrap: wrap;
+            border-style: solid;
+            height: 20px;
+            width: 80px;
+            margin-bottom: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="total">
+        <div class="label">
+            <label for="number1">number1</label>
+            <input type="text" id="number1" name="number1"> <br><br>
+            <label for="number2">number2</label>
+            <input type="text" id="number2" name="number2"><br><br>
+        </div>
+        <h1 class="sonuc"></h1>
+        <div>
+            <div class="kutular">
+                <button onclick="topla()" class="kutu">TOPLA
+            </div>
+            <button onclick="cikar()" class="kutu">ÇIKAR
+        </div>
+        <button onclick="carp()" class="kutu">ÇARP
+    </div>
+    <button onclick="bol()" class="kutu">BÖL</div>
+        </div>
+        </div>
+
+
+        </div>
+
+</body>
+<script>
+    function topla() {
+        var sonuc = number1 + number2;
+    }
+
+</script>
+
+</html>
