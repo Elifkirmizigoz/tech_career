@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js" integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        .all{
+            border-style: solid;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div>
+            <label for="">Name</label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="">unitprice</label>
+            <input type="text" id="unitprice">
+        </div>
+        <div>
+            <label for="stock">unitsİnstock</label>
+            <input type="text" id="unitsİnstock">
+        </div>
+        <button onclick="add()">add</button>
+    
+    </div>
+
+
+</body>
+<script>
+    function add(){
+        var name1=document.querySelector("#name").value;
+        var unitprice1=document.querySelector("#unitprice").value;
+        var stock1=document.querySelector("#unitsİnstock").value;
+        var newCategory={
+            name1,
+            unitprice1,
+            stock1
+        }
+        if (stock1==0 && unitprice1==0){
+            alert("stock veya unitprice 0 olamaz.")
+            return;
+
+        }
+        else{
+            axios.post('https://northwind.vercel.app/api/products',newCategory)
+        .then(res=>{
+            console.log("success!")
+        })
+            
+        }
+        
+    }
+</script>
+</html>

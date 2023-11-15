@@ -40,7 +40,7 @@
             <label for="number2">number2</label>
             <input type="text" id="number2" name="number2"><br><br>
         </div>
-        <h1 class="sonuc"></h1>
+        <h1 id="sonuç"></h1>
         <div>
             <div class="kutular">
                 <button onclick="topla()" class="kutu">TOPLA
@@ -48,19 +48,44 @@
             <button onclick="cikar()" class="kutu">ÇIKAR
         </div>
         <button onclick="carp()" class="kutu">ÇARP
+            <button onclick="bol()" class="kutu">BÖL
     </div>
-    <button onclick="bol()" class="kutu">BÖL</div>
-        </div>
-        </div>
+    </div>
+
+    </div>
+    </div>
 
 
-        </div>
+    </div>
 
 </body>
 <script>
+
     function topla() {
-        var sonuc = number1 + number2;
+        var number1 = document.getElementById("number1").value
+        var number2 = document.getElementById("number2").value
+        var toplam = Number(number1) + Number(number2);
+        document.getElementById("sonuç").innerHTML = toplam;
     }
+    function cikar(){
+        var number1 = document.getElementById("number1").value
+        var number2 = document.getElementById("number2").value
+        var cikar= Number(number1) - Number(number2);
+        document.getElementById("sonuç").innerHTML = cikar;  
+    }
+    function carp(){
+        var number1 = document.getElementById("number1").value
+        var number2 = document.getElementById("number2").value
+        var carp= Number(number1) * Number(number2);
+        document.getElementById("sonuç").innerHTML = carp;  
+    }
+    function bol(){
+        var number1 = document.getElementById("number1").value
+        var number2 = document.getElementById("number2").value
+        var bol= Number(number1) /Number(number2);
+        document.getElementById("sonuç").innerHTML = bol;  
+    }
+
 
 </script>
 

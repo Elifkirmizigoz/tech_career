@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu{
+            border-style: solid;
+            height:400px;
+            width: 300px; 
+
+        }
+        .name{
+            margin-top: 10px; 
+        }
+.add{
+    height:40px;
+    display: grid;
+    margin-top: 50px;
+    align-items: center;
+}
+        
+    </style>
+</head>
+<body>
+    
+    <div class="kutu">
+        <div>
+            <label for="">NAME</label>
+            <input id="name" type="">
+        </div>
+        <div>
+            <label for="">SURNAME</label>
+            <input id="surname" type="">
+        </div>    
+    <button class="add" onclick="add()">ADD</button> 
+    <ul  style="border-style: solid;width: 200px;height: 20px;" id="demo"></ul>
+    </div>
+</body>
+<script> 
+    
+   
+    function add(){
+        var name=document.getElementById("name").value
+        var surname=document.getElementById("surname").value
+        //var demo=document.getElementById("demo")
+console.log(name+" "+surname);
+    //let li= document.createElement("li");
+   // li.innerHTML = name.toUpperCase() + " " + surname.toUpperCase();
+   document.getElementById("demo").innerHTML=name.toUpperCase()+" "+ surname.toUpperCase();
+
+   // demo.appendChild(nameLi);
+    //console.log("Eklendi")
+    }
+
+</script>
+</html>

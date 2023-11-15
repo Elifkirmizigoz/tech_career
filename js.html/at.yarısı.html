@@ -71,7 +71,8 @@
     var i = 0
     function buton() {
 
-        setInterval(() => {
+       var sayac=setInterval(() => {
+        
             var x = Math.floor(Math.random() * 100)
             var y = Math.floor(Math.random() * 200)
             var z = Math.floor(Math.random() * 300)
@@ -79,31 +80,49 @@
             e += x
             l += y
             i += z
-            document.querySelector(".at1").style.marginLeft = e + "px"
-            document.querySelector(".at2").style.marginLeft = l + "px"
-            document.querySelector(".at3").style.marginLeft = i + "px"
+            var  a=document.querySelector(".at1").style.marginLeft = e + "px"
+            var b=document.querySelector(".at2").style.marginLeft = l + "px"
+            var c=document.querySelector(".at3").style.marginLeft = i + "px"
 
             if (e > 1315) {
                 alert("1.at kazandi");
+                clearInterval(sayac)
                 e = 0
                 l = 0
                 i = 0
+                a=0
+                b=0
+                c=0
+                
+
             }
 
             else if (l > 1315) {
                 alert("2. at kazandi")
+                clearInterval(sayac)
                 e = 0
                 l = 0
                 i = 0;
+                a=0
+                b=0
+                c=0
+                
+                
+
             }
 
             else if (i > 1315) {
                 alert("3. at kazandi");
+                clearInterval(sayac)       
                 e = 0
                 l = 0
                 i = 0
+                a=0
+                b=0
+                c=0
+                
+                
             }
-
         }, 500);
 
 

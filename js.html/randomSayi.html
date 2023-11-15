@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="demo"></ul>
+    <div style="margin-top:20px ;">
+        <button onclick="getir()">TIKLA
+        </button>
+    </div>
+
+
+    <script>     
+        var numbers = []
+        let li=document.createElement("li")
+  
+        function getir() {
+            number = Math.floor(Math.random() * 100)
+
+            if(numbers.length>15){
+                alert("15 tane oldu.")
+            }
+            for (var i = 0; i <= 15; i++){
+                if (!numbers.includes(number)){
+                    numbers.push(number)
+                }
+            }
+            li.innerHTML=numbers;
+          document.getElementById("demo").appendChild(li);
+                
+       }
+       
+
+    </script>
+</body>
+
+</html>
